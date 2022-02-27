@@ -13,9 +13,13 @@
       el.innerHTML = 'Hello World!'
       el.style.textAlign = 'center'
       el.style.color = '#009933'
+      el.style.cursor = 'pointer'
       body.style.backgroundColor = '#e0e0d1'
-      body.style.height = '100vh'
       body.appendChild(el)
+
+      el.addEventListener('click', e => {
+        el.innerHTML = 'NO WAR!'
+      })
     </script>
   </body>
 </html>
